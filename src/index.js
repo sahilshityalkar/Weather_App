@@ -33,3 +33,12 @@ async function handleWeatherData(location) {
     }
 }
 
+function handleUserInput() {
+    const location = locationInput.value.trim();
+    if (location) {
+        handleWeatherData(location);
+    } else {
+        console.error('Please enter a valid location.');
+    }
+}
+
