@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Weather App</title>
-
+    <title>Weather API</title>
 </head>
 <body>
-
-    <header>
-        Weather App
-    </header>
-    <section class="main">
-        
-    </section>    
-    <script src="index.js"></script>
+    <div>
+        <label for="location">Enter Location:</label>
+        <input type="text" id="location" name="location">
+        <button id="getWeatherBtn">Get Weather</button>
+    </div>
+    <div id="weatherInfo">
+        <h3>Weather Information</h3>
+        <p><strong>Location:</strong> <span id="locationOutput"></span></p>
+        <p><strong>Temperature:</strong> <span id="temperatureOutput"></span></p>
+        <p><strong>Time:</strong> <span id="timeOutput"></span></p>
+        <p><strong>Humidity:</strong> <span id="humidityOutput"></span></p>
+    </div>
 </body>
 </html>
