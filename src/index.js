@@ -42,3 +42,9 @@ function handleUserInput() {
     }
 }
 
+locationInput.addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+        handleUserInput();
+    }
+});
+
